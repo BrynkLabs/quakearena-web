@@ -1,4 +1,5 @@
 import Bg from "../assets/videos/quake_video.mp4";
+import Feature from "../assets/videos/feature.mp4";
 const Features = () => {
     const features = [
       {
@@ -63,36 +64,38 @@ const Features = () => {
         </div>
   
         {/* Event Space Section - Plain Black Background */}
-        <div className="bg-black py-20">
-          <div className="container mx-auto px-4">
-            <div className="bg-white p-8 md:p-12 lg:p-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-                {/* Left side - Logo/Brand */}
-                <div className="bg-black flex items-center justify-center p-16 lg:p-20">
-                  <div className="text-center">
-                    <div className="text-white text-6xl lg:text-8xl font-light mb-4">O</div>
-                    <div className="text-white text-sm lg:text-base tracking-widest">Chopra's Designs</div>
-                  </div>
-                </div>
-  
-                {/* Right side - Content */}
-                <div className="space-y-6">
-                  <div className="w-12 h-1 bg-black"></div>
-                  <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-black leading-tight">
-                    50,000 SQ.FT OF<br />
-                    VERSATILE EVENT<br />
-                    SPACE
-                  </h2>
-                  <p className="text-black text-lg lg:text-xl leading-relaxed">
-                    providing an authentic industrial setting for live performances 
-                    and concerts, as well as for exhibitions, experiential events, 
-                    product launches conferences and filming.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="bg-black py-10">
+  <div className="container mx-auto px-4">
+    <div className="bg-white p-6 md:p-8 lg:p-10 max-w-4xl mx-auto rounded-lg shadow-lg">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
+        <video 
+          src={Feature} 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          className="w-full h-full object-cover rounded-md"
+        />
+
+        {/* Right side - Content */}
+        <div className="space-y-4">
+          <div className="w-10 h-1 bg-black"></div>
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-black leading-snug">
+            50,000 SQ.FT OF<br />
+            VERSATILE EVENT<br />
+            SPACE
+          </h2>
+          <p className="text-black text-base lg:text-lg leading-relaxed">
+            Providing an authentic industrial setting for live performances 
+            and concerts, as well as for exhibitions, experiential events, 
+            product launches, conferences, and filming.
+          </p>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     );
 };
