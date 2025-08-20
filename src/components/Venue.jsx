@@ -108,10 +108,15 @@ const Venue = () => {
 
             {/* Google Maps Button */}
             <div className="text-center pb-8">
-                <button className="bg-white text-black font-medium text-sm px-6 py-2 inline-flex items-center gap-2">
+                <a 
+                    href="https://www.google.com/maps/place/Quake+Arena/@17.462856,78.3458393,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb933c2cabd405:0x4aaa671088da3ab5!8m2!3d17.4628509!4d78.3484142!16s%2Fg%2F11y8n12tyy?entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-black font-medium text-sm px-6 py-2 inline-flex items-center gap-2 hover:bg-gray-100 transition-colors"
+                >
                     <img src={Map} alt="" width="15"/>
                     VIEW ON GOOGLE MAPS
-                </button>
+                </a>
             </div>
         </div>
     );

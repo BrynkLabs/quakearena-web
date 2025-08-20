@@ -2,8 +2,13 @@ import React from 'react';
 import { MessageCircle, Instagram } from 'lucide-react';
 import Brynklabs from "../assets/icons/brynklabs_logo.svg"; 
 import Quake from "../assets/images/logo.png";
+import Whatsapp from "../assets/icons/whatsapp.svg";
+import X from "../assets/icons/x.svg";
+
 
 const Footer = () => {
+  const instagramLink = "https://www.instagram.com/quakearenaindia/?hl=en";
+
   return (
     <footer className="bg-black text-white py-16 px-6">
       <div className="max-w-4xl mx-auto text-center">
@@ -20,7 +25,7 @@ const Footer = () => {
         {/* Brynk Labs Logo */}
         <div className="mb-8">
           <div className="flex items-center justify-center space-x-2">
-          <img src={Brynklabs} alt="" width="200" height="200" />
+            <img src={Brynklabs} alt="" width="200" height="200" />
           </div>
         </div>
 
@@ -28,31 +33,36 @@ const Footer = () => {
         <div className="flex justify-center space-x-4 mb-8">
           {/* WhatsApp */}
           <a 
-            href="#" 
-            className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
+            href={instagramLink} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-12 h-12 bg-white rounded-full flex items-center justify-center "
             aria-label="WhatsApp"
           >
-            <MessageCircle className="w-6 h-6 text-black" />
+            <img src={Whatsapp} alt="" width="30" height="30" />
           </a>
           
           {/* Instagram */}
           <a 
-            href="#" 
+            href={instagramLink}
+            target="_blank" 
+            rel="noopener noreferrer"
             className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
             aria-label="Instagram"
           >
-            <Instagram className="w-6 h-6 text-black" />
+            <Instagram className="w-8 h-8 text-black" />
           </a>
           
           {/* X (Twitter) */}
           <a 
-            href="#" 
+            href={instagramLink}
+            target="_blank" 
+            rel="noopener noreferrer"
             className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
             aria-label="X (Twitter)"
           >
-            <svg className="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
+            <img src={X} alt="" width="30" height="30" />
+
           </a>
         </div>
 
