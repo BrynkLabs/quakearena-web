@@ -19,51 +19,75 @@ const Features = () => {
     ];
   
     return (
-      <div className="relative min-h-screen w-full overflow-hidden">
-        {/* Video Background Placeholder */}
-        <div className="absolute inset-0 bg-black">
-          {/* Replace this div with your video element */}
-          <div className="w-full h-full bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center justify-center">
-            <div className="text-gray-500 text-xl">Video Background Placeholder</div>
+      <div>
+        <div className="relative min-h-screen w-full overflow-hidden">
+          {/* Video Background Placeholder */}
+          <div className="absolute inset-0 bg-black">
+            {/* Replace this div with your video element */}
+            <div className="w-full h-full bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center justify-center">
+              <div className="text-gray-500 text-xl">Video Background Placeholder</div>
+            </div>
+            {/* Dark overlay for better text readability */}
+            <div className="absolute inset-0 bg-black bg-opacity-60"></div>
           </div>
-          {/* Dark overlay for better text readability */}
-          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+  
+          {/* Content */}
+          <div className="relative z-10 container mx-auto px-4 py-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+              {features.map((feature, index) => (
+                <div key={index} className="text-white space-y-6">
+                  {/* Dash */}
+                  <div className="w-12 h-1 bg-white"></div>
+                  
+                  {/* Title */}
+                  <h3 className="text-2xl lg:text-3xl font-bold leading-tight tracking-wide">
+                    {feature.title}
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="text-gray-300 leading-relaxed text-base lg:text-lg font-light">
+                    {feature.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+  
         </div>
   
-        {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-            {features.map((feature, index) => (
-              <div key={index} className="text-white space-y-6">
-                {/* Dash */}
-                <div className="w-12 h-1 bg-white"></div>
-                
-                {/* Title */}
-                <h3 className="text-2xl lg:text-3xl font-bold leading-tight tracking-wide">
-                  {feature.title}
-                </h3>
-                
-                {/* Description */}
-                <p className="text-gray-300 leading-relaxed text-base lg:text-lg font-light">
-                  {feature.description}
-                </p>
+        {/* Event Space Section - Plain Black Background */}
+        <div className="bg-black py-20">
+          <div className="container mx-auto px-4">
+            <div className="bg-white p-8 md:p-12 lg:p-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                {/* Left side - Logo/Brand */}
+                <div className="bg-black flex items-center justify-center p-16 lg:p-20">
+                  <div className="text-center">
+                    <div className="text-white text-6xl lg:text-8xl font-light mb-4">O</div>
+                    <div className="text-white text-sm lg:text-base tracking-widest">Chopra's Designs</div>
+                  </div>
+                </div>
+  
+                {/* Right side - Content */}
+                <div className="space-y-6">
+                  <div className="w-12 h-1 bg-black"></div>
+                  <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-black leading-tight">
+                    50,000 SQ.FT OF<br />
+                    VERSATILE EVENT<br />
+                    SPACE
+                  </h2>
+                  <p className="text-black text-lg lg:text-xl leading-relaxed">
+                    providing an authentic industrial setting for live performances 
+                    and concerts, as well as for exhibitions, experiential events, 
+                    product launches conferences and filming.
+                  </p>
+                </div>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-  
-        {/* Optional: Curved bottom border like in the image */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg
-            className="w-full h-20 text-black fill-current"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z"></path>
-          </svg>
         </div>
       </div>
     );
-  };
-  
-  export default Features;
+};
+
+export default Features;
