@@ -81,7 +81,7 @@ const Hero = () => {
         }
       `}</style>
 
-      <div className="relative min-h-screen bg-black overflow-hidden">
+      <div className="relative h-screen bg-black overflow-hidden">
         {/* Background Parallax with very low z-index */}
         <div className="absolute inset-0 z-0">
           <ParallaxScroll images={images} />
@@ -103,17 +103,25 @@ const Hero = () => {
 
       {/* Phone + Map Buttons with Shine */}
       <div className="flex gap-4">
-        <button className="relative w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden">
+        <a
+          href="tel:+919346315817"
+          className="relative w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden hover:bg-opacity-20 transition-all duration-300"
+        >
           <Phone size={20} />
           {/* Shine overlay */}
           <span className="absolute inset-0 rounded-full bg-gradient-to-br from-white/40 to-transparent pointer-events-none" />
-        </button>
+        </a>
 
-        <button className="relative w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden">
+        <a
+          href="https://www.google.com/maps/place/Quake+Arena/@17.462856,78.3458393,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb933c2cabd405:0x4aaa671088da3ab5!8m2!3d17.4628509!4d78.3484142!16s%2Fg%2F11y8n12tyy?entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden hover:bg-opacity-20 transition-all duration-300"
+        >
           <MapPin size={20} />
           {/* Shine overlay */}
           <span className="absolute inset-0 rounded-full bg-gradient-to-br from-white/40 to-transparent pointer-events-none" />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -144,29 +152,41 @@ const Hero = () => {
             </div>
 
             <h1
-              className={`relative text-white text-2xl md:text-3xl lg:text-5xl font-bold mb-8 leading-relaxed transition-all duration-1000 ${
-                isAnimated
-                  ? "opacity-100 translate-y-0 scale-100"
-                  : "opacity-0 translate-y-12 scale-125"
-              }`}
-              style={{
-                animation: isAnimated
-                  ? "zoomOutUp 0.8s ease-out 0.2s both"
-                  : "none",
-              }}
-            >
-              INDIA'S MOST FORWARD
-              <br />
-              THINKING AND <span className="text-blue-400">50,000</span>{" "}
-              <span className="text-cyan-400">SQ</span>{" "}
-              <span className="text-red-500">FT</span>
-              <br />
-              IMMERSIVE EXPERIENCE EVENT
-              <br />
-              <span className="text-white text-2xl md:text-3xl lg:text-5xl">
-                ARENA
-              </span>
-            </h1>
+  className={`relative text-white text-2xl md:text-3xl lg:text-5xl font-bold mb-8 leading-relaxed transition-all duration-1000 ${
+    isAnimated
+      ? "opacity-100 translate-y-0 scale-100"
+      : "opacity-0 translate-y-12 scale-125"
+  }`}
+  style={{
+    animation: isAnimated
+      ? "zoomOutUp 0.8s ease-out 0.2s both"
+      : "none",
+  }}
+>
+  INDIA'S MOST FORWARD
+  <br />
+  THINKING AND{" "}
+  <span
+  className="inline-block text-transparent bg-clip-text"
+  style={{
+    backgroundImage:
+      "linear-gradient(79.14deg, #9C9FF9 , #3FFFFF 75.44%, #FF0908 83.33%, #FFFF1F 92.98%, #000000 100%)",
+    WebkitBackgroundClip: "text",   
+    WebkitTextFillColor: "transparent", 
+  }}
+>
+  50,000 SQ FT
+</span>
+
+
+  <br />
+  IMMERSIVE EXPERIENCE EVENT
+  <br />
+  <span className="text-white text-2xl md:text-3xl lg:text-5xl">
+    ARENA
+  </span>
+</h1>
+
           </div>
 
           {/* CTA Buttons
@@ -188,7 +208,7 @@ const Hero = () => {
           </div> */}
         </div>
 
-        <Marquee className="absolute bottom-0 left-0 w-full bg-black text-white py-3 px-6 z-50" autoFill={true} speed={100}>
+        <Marquee className="absolute bottom-0 left-0 w-full bg-black text-white py-3 px-6 z-20" autoFill={true} speed={100}>
           <div className="flex items-center space-x-2 mx-6">  
             <img src={QuakeIcon} alt="" width="30" height="30" />
             <h1 className="relative text-white text-lg md:text-xl lg:text-3xl font-bold"> 
