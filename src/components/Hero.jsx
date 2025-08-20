@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Menu } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import QuakeIcon from "../assets/icons/quake.svg";
 import Crystal from "../assets/icons/quake_crystal.svg";
 import img1 from "../assets/images/img1.jpg";
@@ -91,18 +91,34 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
 
         {/* Frosted Navbar */}
+        
+
         <nav className="fixed top-10 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-2xl mx-auto px-2">
-          <div className="bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-full px-8 py-4">
-            <div className="flex items-center justify-between">
-              <div className="text-white font-bold text-xl tracking-wider">
-                <img src={Logo} alt="" />
-              </div>
-              <button className="text-white p-2 hover:bg-white hover:bg-opacity-10 rounded-full transition-all duration-300">
-                <Menu size={24} />
-              </button>
-            </div>
-          </div>
-        </nav>
+  <div className="bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-full px-8 py-4">
+    <div className="flex items-center justify-between">
+      {/* Logo */}
+      <div className="text-white font-bold text-xl tracking-wider">
+        <img src={Logo} alt="Logo" />
+      </div>
+
+      {/* Phone + Map Buttons with Shine */}
+      <div className="flex gap-4">
+        <button className="relative w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden">
+          <Phone size={20} />
+          {/* Shine overlay */}
+          <span className="absolute inset-0 rounded-full bg-gradient-to-br from-white/40 to-transparent pointer-events-none" />
+        </button>
+
+        <button className="relative w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden">
+          <MapPin size={20} />
+          {/* Shine overlay */}
+          <span className="absolute inset-0 rounded-full bg-gradient-to-br from-white/40 to-transparent pointer-events-none" />
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
 
         {/* Main content with highest z-index */}
         <div className="relative z-40 flex flex-col items-center justify-center min-h-screen text-center px-6">
