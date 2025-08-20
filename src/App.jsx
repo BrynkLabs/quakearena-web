@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './index.css' 
-import QuakeArena from "./components/Hero.jsx";
+import Quake from "./components/Quake.jsx";
 function App() {
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<QuakeArena />} />
+        <Route path="/" element={<Quake />} />
       </Routes>
     </Router>
   )

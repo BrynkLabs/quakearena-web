@@ -13,7 +13,7 @@ import quakeBg from "../assets/icons/quake_bg.png";
 import ParallaxScroll from "./ui/ParallaxScroll";
 import Marquee from "react-fast-marquee";
 
-const QuakeArena = () => {
+const Hero = () => {
   const [isAnimated, setIsAnimated] = useState(false);
 
   // Fixed: Use useEffect instead of useState with callback
@@ -185,4 +185,4 @@ const QuakeArena = () => {
   );
 };
 
-export default QuakeArena;
+export default Hero;
