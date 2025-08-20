@@ -1,3 +1,4 @@
+import Bg from "../assets/videos/quake_video.mp4";
 const Features = () => {
     const features = [
       {
@@ -23,33 +24,39 @@ const Features = () => {
         <div className="relative min-h-screen w-full overflow-hidden">
           {/* Video Background Placeholder */}
           <div className="absolute inset-0 bg-black">
-            {/* Replace this div with your video element */}
-            <div className="w-full h-full bg-gradient-to-br from-gray-900 via-black to-gray-800 flex items-center justify-center">
-              <div className="text-gray-500 text-xl">Video Background Placeholder</div>
-            </div>
+            <video 
+              src={Bg} 
+              autoPlay 
+              muted 
+              loop 
+              playsInline
+              className="w-full h-full object-cover"
+            />
             {/* Dark overlay for better text readability */}
             <div className="absolute inset-0 bg-black bg-opacity-60"></div>
           </div>
   
           {/* Content */}
-          <div className="relative z-10 container mx-auto px-4 py-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-              {features.map((feature, index) => (
-                <div key={index} className="text-white space-y-6">
-                  {/* Dash */}
-                  <div className="w-12 h-1 bg-white"></div>
-                  
-                  {/* Title */}
-                  <h3 className="text-2xl lg:text-3xl font-bold leading-tight tracking-wide">
-                    {feature.title}
-                  </h3>
-                  
-                  {/* Description */}
-                  <p className="text-gray-300 leading-relaxed text-base lg:text-lg font-light">
-                    {feature.description}
-                  </p>
-                </div>
-              ))}
+          <div className="relative z-10 min-h-screen flex items-center justify-center">
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+                {features.map((feature, index) => (
+                  <div key={index} className="text-white space-y-6">
+                    {/* Dash */}
+                    <div className="w-12 h-1 bg-white"></div>
+                    
+                    {/* Title */}
+                    <h3 className="text-2xl lg:text-3xl font-bold leading-tight tracking-wide">
+                      {feature.title}
+                    </h3>
+                    
+                    {/* Description */}
+                    <p className="text-gray-300 leading-tight text-base lg:text-lg font-light">
+                      {feature.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
   
