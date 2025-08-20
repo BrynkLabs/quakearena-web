@@ -42,7 +42,7 @@ const ParallaxScroll = ({ images, className }) => {
         className={`h-screen items-start overflow-hidden w-full ${className || ""}`}
         ref={gridRef}
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start max-w-7xl mx-auto gap-6 py-10 px-10">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 items-start max-w-7xl mx-auto gap-6 py-10 px-10">
           {/* First Part - Moving Up */}
           <div
             className="scroll-container"
