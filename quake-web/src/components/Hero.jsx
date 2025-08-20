@@ -246,7 +246,7 @@ const QuakeArena = () => {
             INDIA'S MOST FORWARD<br />
             THINKING AND <span className="text-blue-400 drop-shadow-xl">50,000</span> <span className="text-cyan-400 drop-shadow-xl">SQ</span> <span className="text-red-500 drop-shadow-xl">FT</span><br />
             IMMERSIVE EXPERIENCE EVENT<br />
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent">ARENA</span>
+            <span className=" text-white text-2xl md:text-3xl lg:text-5xl">ARENA</span>
           </h1>
 
           {/* CTA Buttons */}
