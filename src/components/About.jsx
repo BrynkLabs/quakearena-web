@@ -37,6 +37,10 @@ const About = () => {
   const textColor = `rgb(${255 - Math.floor(scrollProgress * 255)}, ${
     255 - Math.floor(scrollProgress * 255)
   }, ${255 - Math.floor(scrollProgress * 255)})`;
+  console.log(`Text Color: ${textColor}`);
+  
+  const isDark = (255 - Math.floor(scrollProgress * 255)) <= 20;
+
 
   return (
     <section
@@ -80,16 +84,18 @@ const About = () => {
 
         {/* ABOUT text */}
         <div className="absolute inset-0 flex items-start justify-center z-10 mt-32">
-          <h1
-            className="text-4xl md:text-6xl lg:text-8xl font-extrabold leading-tight text-center transition-colors duration-200"
-            style={{
-              color: textColor,
-              transform: `translateY(${scrollProgress * 100}vh)`,
-            }}
-          >
-            ABOUT <br /> QUAKE <br /> ARENA
-          </h1>
-        </div>
+  <h1
+    className={`text-4xl md:text-6xl lg:text-8xl font-extrabold leading-tight text-center transition-colors duration-200`}
+    style={{
+      color: textColor, // keep the fill
+      transform: `translateY(${scrollProgress * 100}vh)`,
+      WebkitTextStroke: isDark ? "2px white" : "0px transparent", // add white border when dark
+      paintOrder: "stroke fill", // ensures stroke is behind the fill
+    }}
+  >
+    ABOUT <br /> QUAKE <br /> ARENA
+  </h1>
+</div>
 
         {/* Cards with video inside */}
         <div className="absolute inset-0 z-20">
