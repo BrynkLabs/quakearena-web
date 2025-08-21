@@ -23,3 +23,7 @@
       transform: translateY(0) scale(1);
     }
   }
+
+  body{
+    background-color: black;
+  }
