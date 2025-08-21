@@ -41,20 +41,33 @@ const About = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-[170vh] w-full overflow-hidden text-white"
+      className="relative h-[172vh] w-full overflow-hidden text-white px-24"
     >
-      {/* Background Video - full screen, seamless */}
-      <div className="sticky top-0 w-full h-screen ">
-
-      <video
-          className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        <div className="absolute top-0 left-0 w-full h-[175vh] bg-black/85 -z-5 " />
+        {/* bottom-[-70px] */}
+        <video
+          className="absolute top-0 pb-6 left-0 w-full h-[172vh] object-cover -z-10 "
           src={Feature}
           autoPlay
           loop
           muted
           playsInline
         />
-        
+
+      {/* Background Video - full screen, seamless */}
+      <div className="sticky top-0 w-full h-screen ">
+
+      
+      {/* <div className="absolute top-0 left-0 w-full h-[175vh] bg-black/85 -z-5 px-24" /> */}
+
+        {/* <video
+          className="absolute top-[-60px] left-0 w-full h-full object-contain -z-10"
+          src={Feature}
+          autoPlay
+          loop
+          muted
+          playsInline
+        /> */}
         {/* Title */}
         <div className="absolute top-6 left-1/2 -translate-x-1/2 text-center z-20">
           <h2 className="text-lg md:text-xl lg:text-3xl font-semibold tracking-wide">
@@ -85,9 +98,7 @@ const About = () => {
             className="absolute rounded-2xl shadow-2xl overflow-hidden border border-white/10 w-72 h-80"
             style={{
               top: "10%",
-              left: "5%",
-              transform: `translateY(${scrollProgress * 50}px)`,
-              opacity: Math.max(0.3, 1 - scrollProgress * 0.7),
+              left: "5%"
             }}
           >
             {/* Video Background */}
@@ -110,9 +121,7 @@ const About = () => {
             className="absolute rounded-2xl shadow-2xl overflow-hidden border border-white/10 w-72 h-80"
             style={{
               top: "70%",
-              left: "50%",
-              transform: `translateX(-50%) translateY(${-scrollProgress * 30}px)`,
-              opacity: Math.max(0.3, 1 - scrollProgress * 0.7),
+              left: "40%"
             }}
           >
             <video
@@ -134,9 +143,7 @@ const About = () => {
             className="absolute rounded-2xl shadow-2xl overflow-hidden border border-white/10 w-72 h-80"
             style={{
               top: "120%",
-              right: "5%",
-              transform: `translateY(${scrollProgress * 40}px)`,
-              opacity: Math.max(0.3, 1 - scrollProgress * 0.7),
+              right: "5%"
             }}
           >
             <video

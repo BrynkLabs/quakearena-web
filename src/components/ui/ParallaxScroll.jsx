@@ -47,14 +47,14 @@ const ParallaxScroll = ({ images, className }) => {
           <div
             className="scroll-container"
             style={{
-              animation: `moveUpSmooth ${firstPart.length * 2}s linear infinite`,
+              animation: `moveUpSmooth 10s linear infinite`,
             }}
           >
             <div className="grid gap-6">
               {firstPartLoop.map((el, idx) => (
                 <div
                   key={"grid-1" + idx}
-                  className="border border-gray-300 rounded-lg overflow-hidden shadow-sm"
+                  className="border border-gray-300 rounded-3xl overflow-hidden shadow-sm"
                 >
                   <img
                     src={el}
@@ -72,14 +72,14 @@ const ParallaxScroll = ({ images, className }) => {
           <div
             className="scroll-container"
             style={{
-              animation: `moveDownSmooth ${secondPart.length * 2}s linear infinite`,
+              animation: `moveDownSmooth 10s linear infinite`,
             }}
           >
             <div className="grid gap-6">
               {secondPartLoop.map((el, idx) => (
                 <div
                   key={"grid-2" + idx}
-                  className="border border-gray-300 rounded-lg overflow-hidden shadow-sm"
+                  className="border border-gray-300 rounded-3xl overflow-hidden shadow-sm"
                 >
                   <img
                     src={el}
@@ -97,14 +97,14 @@ const ParallaxScroll = ({ images, className }) => {
           <div
             className="scroll-container"
             style={{
-              animation: `moveUpSmooth ${thirdPart.length * 2}s linear infinite`,
+              animation: `moveUpSmooth 10s linear infinite`,
             }}
           >
             <div className="grid gap-6">
               {thirdPartLoop.map((el, idx) => (
                 <div
                   key={"grid-3" + idx}
-                  className="border border-gray-300 rounded-lg overflow-hidden shadow-sm"
+                  className="border border-gray-300 rounded-3xl overflow-hidden shadow-sm"
                 >
                   <img
                     src={el}
@@ -122,14 +122,14 @@ const ParallaxScroll = ({ images, className }) => {
           <div
             className="scroll-container"
             style={{
-              animation: `moveDownSmooth ${fourthPart.length * 2}s linear infinite`,
+              animation: `moveDownSmooth 10s linear infinite`,
             }}
           >
             <div className="grid gap-6">
               {fourthPartLoop.map((el, idx) => (
                 <div
                   key={"grid-4" + idx}
-                  className="border border-gray-300 rounded-lg overflow-hidden shadow-sm"
+                  className="border border-gray-300 rounded-3xl overflow-hidden shadow-sm"
                 >
                   <img
                     src={el}

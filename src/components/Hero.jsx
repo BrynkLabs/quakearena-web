@@ -148,7 +148,7 @@ const Hero = () => {
           <div className="relative inline-block px-6 py-4">
             {/* Dark shadow backdrop */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none mb-4">
-              <div className="w-[600px] h-[250px] rounded-full bg-black opacity-90 blur-2xl"></div>
+              <div className="w-[700px] h-[250px] rounded-full bg-black opacity-90 blur-2xl"></div>
             </div>
 
             <h1
@@ -208,7 +208,8 @@ const Hero = () => {
           </div> */}
         </div>
 
-        <Marquee className="absolute bottom-0 left-0 w-full bg-black text-white py-3 px-6 z-20" autoFill={true} speed={100}>
+      </div>
+      <Marquee className="absolute bottom-0 left-0 w-full bg-black text-white py-3 px-6 z-20" autoFill={true} speed={100}>
           <div className="flex items-center space-x-2 mx-6">  
             <img src={QuakeIcon} alt="" width="30" height="30" />
             <h1 className="relative text-white text-lg md:text-xl lg:text-3xl font-bold"> 
@@ -216,7 +217,6 @@ const Hero = () => {
             </h1>
           </div>
         </Marquee>
-      </div>
     </>
   );
 };
