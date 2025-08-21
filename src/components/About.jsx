@@ -86,7 +86,7 @@ const About = () => {
         {/* ABOUT text */}
         <div className="absolute inset-0 flex items-start justify-center z-10 mt-32">
   <h1
-    className={`text-4xl md:text-6xl lg:text-8xl font-extrabold leading-tight text-center transition-colors duration-200`}
+    className={`text-2xl md:text-4xl lg:text-6xl font-extrabold leading-tight text-center transition-colors duration-200`}
     style={{
       color: textColor, // keep the fill
       transform: `translateY(${scrollProgress * 100}vh)`,
