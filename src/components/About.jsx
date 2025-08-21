@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Feature from "../assets/videos/about.mp4";
+import bg from "../assets/videos/video.mp4"; 
 
 const About = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -109,14 +110,14 @@ const About = () => {
           >
             {/* Video Background */}
             <video
-              className="absolute inset-0 w-full h-full object-cover bg-black/50"
-              src={Feature}
+              className="absolute inset-0 w-full h-full object-cover "
+              src={bg}
               autoPlay
               loop
               muted
               playsInline
             />
-            <div className="relative h-full p-6 flex flex-col ">
+            <div className="relative h-full p-6 flex flex-col justify-end bg-black/50 ">
               <h3 className="text-4xl font-bold mb-2">4,500+</h3>
               <p className="text-lg text-gray-200">Venue Capacity</p>
             </div>
@@ -132,7 +133,7 @@ const About = () => {
           >
             <video
               className="absolute inset-0 w-full h-full object-cover"
-              src={Feature}
+              src={bg}
               autoPlay
               loop
               muted
@@ -154,7 +155,7 @@ const About = () => {
           >
             <video
               className="absolute inset-0 w-full h-full object-cover"
-              src={Feature}
+              src={bg}
               autoPlay
               loop
               muted
