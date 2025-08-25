@@ -55,24 +55,40 @@ const About = () => {
         }
 
         .spiral-text-and {
-          background: linear-gradient(79.14deg, #000000 0%, #FFFFFF 17.54%, #FFFFFF 49.12%, #1117FF 63.16%, #3FFFFF 75.44%, #FF0908 83.33%, #FFFF1F 92.98%, #000000 100%);
-          background-size: 200% 200%;
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          animation: gradientShift 2s ease-in-out infinite;
-          display: inline-block;
-        }
+    background: linear-gradient(
+      79.14deg,
+      #000000 0%,
+      #ffffff 17.54%,
+      #ffffff 49.12%,
+      #1117ff 63.16%,
+      #3fffff 75.44%,
+      #ff0908 83.33%,
+      #ffff1f 92.98%,
+      #000000 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
 
-        .spiral-text-beyond {
-          background: linear-gradient(79.14deg, #000000 0%, #FFFFFF 17.54%, #FFFFFF 49.12%, #1117FF 63.16%, #3FFFFF 75.44%, #FF0908 83.33%, #FFFF1F 92.98%, #000000 100%);
-          background-size: 200% 200%;
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          animation: gradientShift 2s ease-in-out infinite;
-          display: inline-block;
-        }
+  .spiral-text-beyond {
+    background: linear-gradient(
+      79.14deg,
+      #000000 0%,
+      #ffffff 17.54%,
+      #ffffff 49.12%,
+      #1117ff 63.16%,
+      #3fffff 75.44%,
+      #ff0908 83.33%,
+      #ffff1f 92.98%,
+      #000000 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
       `}</style>
       
       <section
@@ -95,12 +111,20 @@ const About = () => {
 
           {/* Title */}
           <div className="absolute top-6 left-1/2 -translate-x-1/2 text-center z-20">
-            <h2 className="text-lg md:text-xl lg:text-3xl font-semibold tracking-wide">
+            <h2
+              className="
+                text-2xl       /* Mobile bigger */
+                md:text-xl     /* Tablet */
+                lg:text-3xl    /* Desktop */
+                font-semibold tracking-wide whitespace-nowrap
+              "
+            >
               A WILD DREAM{" "}
               <span className="spiral-text-and">AND</span>{" "}
               <span className="spiral-text-beyond">BEYOND</span>
             </h2>
           </div>
+
 
           {/* ABOUT text */}
           <div className="absolute inset-0 flex items-start justify-center z-10 mt-32">
@@ -121,7 +145,7 @@ const About = () => {
           <div className="absolute inset-0 z-20">
             {/* Card 1 */}
             <div
-              className="absolute rounded-2xl shadow-2xl overflow-hidden border border-white/10 w-44 h-60 md:w-72 md:h-80"
+              className="absolute rounded-2xl shadow-2xl overflow-hidden border border-white/10 w-44 h-60 md:w-64 md:h-80"
               style={{
                 top: window.innerWidth < 768 ? "50%" : "10%", // Mobile: 40%, Desktop: 10%
                 left: window.innerWidth < 768 ? "" : "5%"   // Mobile: 10%, Desktop: 5%
@@ -144,7 +168,7 @@ const About = () => {
 
             {/* Card 2 */}
             <div
-              className="absolute rounded-2xl shadow-2xl overflow-hidden border border-white/10 w-44 h-60 md:w-72 md:h-80"
+              className="absolute rounded-2xl shadow-2xl overflow-hidden border border-white/10 w-44 h-60 md:w-64 md:h-80"
               style={{
                 top: window.innerWidth < 768 ? "90%" : "70%", // Mobile: 80%, Desktop: 70%
                 left: window.innerWidth < 768 ? "30%" : "40%" // Mobile: 50%, Desktop: 40%
@@ -166,7 +190,7 @@ const About = () => {
 
             {/* Card 3 */}
             <div
-              className="absolute rounded-2xl shadow-2xl overflow-hidden border border-white/10 w-44 h-60 md:w-72 md:h-80"
+              className="absolute rounded-2xl shadow-2xl overflow-hidden border border-white/10 w-44 h-60 md:w-64 md:h-80"
               style={{
                 top: window.innerWidth < 768 ? "130%" : "120%",
                 right: window.innerWidth < 768 ? "0%" : "5%" // Mobile: 10%, Desktop: 5%
