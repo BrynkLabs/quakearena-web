@@ -11,11 +11,15 @@ const Footer = () => {
 
   return (
     <footer className="bg-black text-white py-16 px-6">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center px-4">
         {/* Quake Arena Logo */}
         <div className="mb-8">
           <div className="inline-block">
-            <img src={Quake} alt="" width="200" height="200" />
+            <img 
+              src={Quake} 
+              alt="Quake Arena Logo" 
+              className="w-40 sm:w-48 md:w-56 lg:w-52 h-auto mx-auto"
+            />
           </div>
         </div>
 
@@ -24,9 +28,13 @@ const Footer = () => {
 
         {/* Brynk Labs Logo */}
         <div className="mb-8">
-          <div className="flex items-center justify-center space-x-2">
-            <img src={Brynklabs} alt="" width="200" height="200" />
-          </div>
+          <a className="flex items-center justify-center" href='https://brynklabs.com/' target="_blank" rel="noopener noreferrer">
+            <img 
+              src={Brynklabs} 
+              alt="Brynk Labs Logo" 
+              className="w-32 sm:w-40 md:w-48 lg:w-44 h-auto"
+            />
+          </a>
         </div>
 
         {/* Social Media Icons */}
@@ -36,10 +44,10 @@ const Footer = () => {
             href={instagramLink} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-12 h-12 bg-white rounded-full flex items-center justify-center "
+            className="w-12 h-12 bg-white rounded-full flex items-center justify-center"
             aria-label="WhatsApp"
           >
-            <img src={Whatsapp} alt="" width="30" height="30" />
+            <img src={Whatsapp} alt="WhatsApp" className="w-6 sm:w-7 md:w-7 h-auto" />
           </a>
           
           {/* Instagram */}
@@ -50,7 +58,7 @@ const Footer = () => {
             className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
             aria-label="Instagram"
           >
-            <Instagram className="w-8 h-8 text-black" />
+            <Instagram className="w-6 sm:w-7 md:w-7 text-black" />
           </a>
           
           {/* X (Twitter) */}
@@ -61,8 +69,7 @@ const Footer = () => {
             className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
             aria-label="X (Twitter)"
           >
-            <img src={X} alt="" width="30" height="30" />
-
+            <img src={X} alt="Twitter (X)" className="w-6 sm:w-7 md:w-7 h-auto" />
           </a>
         </div>
 
@@ -76,6 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
     </footer>
   );
 };

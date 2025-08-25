@@ -35,7 +35,7 @@ const Venue = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-black text-white">
+        <div className="min-h-screen sm:min-h-[80vh] md:min-h-screen lg:min-h-[120vh]  bg-black text-white">
             {/* Header */}
             <div className="text-center py-8 relative">
                 <div className="flex justify-between items-center px-8">
@@ -97,7 +97,7 @@ const Venue = () => {
                     href="https://www.google.com/maps/place/Quake+Arena/@17.462856,78.3458393,17z"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-white text-black font-medium text-sm px-6 py-2 inline-flex items-center gap-2 hover:bg-gray-100 transition-colors"
+                    className="bg-white text-black font-medium text-sm px-10 lg:px-6 py-2 inline-flex items-center gap-2 hover:bg-gray-100 transition-colors"
                 >
                     <img src={Map} alt="" width="15"/>
                     VIEW ON GOOGLE MAPS
