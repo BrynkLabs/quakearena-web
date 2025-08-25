@@ -1,6 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import Feature from "../assets/videos/about.mp4";
 import bg from "../assets/videos/video.mp4"; 
+import Vertical from "../assets/icons/vertical.svg";
+import Horizontal from "../assets/icons/horizontal.svg";
+import Waves from "../assets/icons/waves.svg";
+import VWave from "../assets/icons/vertical_wave.svg";
+
 
 const About = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -59,8 +64,7 @@ const About = () => {
             79.14deg,
             #ffffff,
             #1117ff,
-                        #1117ff,
-
+            #1117ff,
             #3fffff,
             #1117ff,
             #3fffff,
@@ -142,9 +146,33 @@ const About = () => {
                 muted
                 playsInline
               />
-              <div className="relative h-full p-4 md:p-6 flex flex-col justify-end bg-black/50 ">
-                <h3 className="text-2xl md:text-4xl font-bold mb-2">4,500+</h3>
-                <p className="text-sm md:text-lg text-gray-200">Venue Capacity</p>
+              <div className="relative h-full p-4 md:p-6 flex flex-col justify-between bg-black/50">
+                {/* VWave icon - top left */}
+                <div className="flex justify-start">
+                  <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                    <img 
+                      src={VWave} 
+                      alt="Waves" 
+                      className="w-full h-full object-contain opacity-80"
+                    />
+                  </div>
+                </div>
+                
+                {/* Content - bottom section */}
+                <div className="flex flex-col">
+                  {/* Horizontal icon - right aligned above title */}
+                  <div className="flex justify-end mb-2">
+                    <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                      <img 
+                        src={Horizontal} 
+                        alt="Horizontal" 
+                        className="w-full h-full object-contain opacity-80"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl md:text-4xl font-bold mb-2">4,500+</h3>
+                  <p className="text-sm md:text-lg text-gray-200">Venue Capacity</p>
+                </div>
               </div>
             </div>
 
@@ -164,9 +192,33 @@ const About = () => {
                 muted
                 playsInline
               />
-              <div className="relative h-full p-4 md:p-6 flex flex-col justify-end bg-black/50">
-                <h3 className="text-2xl md:text-4xl font-bold mb-2">200+</h3>
-                <p className="text-sm md:text-lg text-gray-200">Backstage Capacity</p>
+              <div className="relative h-full p-4 md:p-6 flex flex-col justify-between bg-black/50">
+                {/* Vertical icon - top left */}
+                <div className="flex justify-start">
+                  <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                    <img 
+                      src={Vertical} 
+                      alt="Vertical" 
+                      className="w-full h-full object-contain opacity-80"
+                    />
+                  </div>
+                </div>
+
+                {/* Content - bottom section */}
+                <div className="flex flex-col">
+                  {/* Waves icon - right aligned above title */}
+                  <div className="flex justify-end mb-2">
+                    <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                      <img 
+                        src={Waves} 
+                        alt="Waves" 
+                        className="w-full h-full object-contain opacity-80"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl md:text-4xl font-bold mb-2">200+</h3>
+                  <p className="text-sm md:text-lg text-gray-200">Backstage Capacity</p>
+                </div>
               </div>
             </div>
 
@@ -186,9 +238,33 @@ const About = () => {
                 muted
                 playsInline
               />
-              <div className="relative h-full p-4 md:p-6 flex flex-col justify-end bg-black/50">
-                <h3 className="text-2xl md:text-4xl font-bold mb-2">100+</h3>
-                <p className="text-sm md:text-lg text-gray-200">Tables</p>
+              <div className="relative h-full p-4 md:p-6 flex flex-col justify-between bg-black/50">
+                {/* VWave icon - top left */}
+                <div className="flex justify-start">
+                  <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                    <img 
+                      src={VWave} 
+                      alt="Waves" 
+                      className="w-full h-full object-contain opacity-80"
+                    />
+                  </div>
+                </div>
+                
+                {/* Content - bottom section */}
+                <div className="flex flex-col">
+                  {/* Horizontal icon - right aligned above title */}
+                  <div className="flex justify-end mb-2">
+                    <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                      <img 
+                        src={Horizontal} 
+                        alt="Horizontal" 
+                        className="w-full h-full object-contain opacity-80"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl md:text-4xl font-bold mb-2">100+</h3>
+                  <p className="text-sm md:text-lg text-gray-200">Tables</p>
+                </div>
               </div>
             </div>
 

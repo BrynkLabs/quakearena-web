@@ -42,14 +42,23 @@ const Features = () => {
             <div className="container mx-auto px-4">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
                 {features.map((feature, index) => (
-                  <div key={index} className="text-white space-y-6">
+                  <div key={index} className="text-white space-y-6 lg:space-y-6">
                     {/* Dash */}
-                    <div className="w-12 h-1 bg-white"></div>
+                    <div className="w-8 h-2 bg-white"></div>
                     
                     {/* Title */}
-                    <h3 className="text-2xl lg:text-3xl font-bold leading-tight tracking-wide">
+                    <h3
+                      className="
+                        text-4xl sm:text-3xl font-bold leading-tight tracking-wide 
+                        break-words 
+                        whitespace-normal 
+                        max-w-[90%] 
+                        md:max-w-none md:whitespace-normal
+                      "
+                    >
                       {feature.title}
                     </h3>
+
                     
                     {/* Description */}
                     <p className="text-gray-300 leading-tight text-base lg:text-lg font-light">
