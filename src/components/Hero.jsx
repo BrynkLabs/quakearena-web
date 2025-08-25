@@ -87,35 +87,40 @@ const Hero = () => {
 
         {/* Navbar */}
         <nav className="fixed top-10 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-2xl mx-auto px-2">
-          <div className="bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-full px-8 py-4">
-            <div className="flex items-center justify-between">
-              {/* Logo */}
-              <div className="text-white font-bold text-xl tracking-wider">
-                <img src={Logo} alt="Logo" />
-              </div>
+  <div className="bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-full px-8 py-4">
+    <div className="flex items-center justify-between">
+      {/* Logo */}
+      <div className="text-white font-bold tracking-wider">
+        <img
+          src={Logo}
+          alt="Logo"
+          className="w-24 sm:w-20 md:w-24 lg:w-28" // 👈 smaller on mobile
+        />
+      </div>
 
-              {/* Phone + Map */}
-              <div className="flex gap-4">
-                <a
-                  href="tel:+919346315817"
-                  className="relative w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden hover:bg-opacity-20 transition-all duration-300"
-                >
-                  <Phone size={20} />
-                  <span className="absolute inset-0 rounded-full bg-gradient-to-br from-white/40 to-transparent pointer-events-none" />
-                </a>
-                <a
-                  href="https://www.google.com/maps/place/Quake+Arena/@17.462856,78.3458393,17z"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative w-12 h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden hover:bg-opacity-20 transition-all duration-300"
-                >
-                  <MapPin size={20} />
-                  <span className="absolute inset-0 rounded-full bg-gradient-to-br from-white/40 to-transparent pointer-events-none" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
+      {/* Phone + Map */}
+      <div className="flex gap-4">
+        <a
+          href="tel:+919346315817"
+          className="relative w-10 h-10 sm:w-8 sm:h-8 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden hover:bg-opacity-20 transition-all duration-300"
+        >
+          <Phone size={18} className="sm:w-4 sm:h-4 md:w-5 md:h-5" />
+          <span className="absolute inset-0 rounded-full bg-gradient-to-br from-white/40 to-transparent pointer-events-none" />
+        </a>
+        <a
+          href="https://www.google.com/maps/place/Quake+Arena/@17.462856,78.3458393,17z"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative w-10 h-10 sm:w-8 sm:h-8 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden hover:bg-opacity-20 transition-all duration-300"
+        >
+          <MapPin size={18} className="sm:w-4 sm:h-4 md:w-5 md:h-5" />
+          <span className="absolute inset-0 rounded-full bg-gradient-to-br from-white/40 to-transparent pointer-events-none" />
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
 
         {/* Hero Content */}
         <div className="relative z-40 flex flex-col items-center justify-center min-h-screen text-center px-6">
@@ -140,7 +145,7 @@ const Hero = () => {
             </div>
 
             <h1
-              className={`relative text-white text-2xl md:text-3xl lg:text-5xl font-bold mb-8 leading-relaxed transition-all duration-1000 ${
+              className={`relative text-white text-3xl sm:text-[25px] tracking-wider md:text-3xl lg:text-5xl font-bold mb-8 transition-all duration-1000 ${
                 isAnimated
                   ? "opacity-100 translate-y-0 scale-100"
                   : "opacity-0 translate-y-12 scale-125"
@@ -149,9 +154,12 @@ const Hero = () => {
                 animation: isAnimated ? "zoomOutUp 0.8s ease-out 0.2s both" : "none",
               }}
             >
-              INDIA'S MOST FORWARD
-              <br />
-              THINKING AND{" "}
+              INDIA'S MOST {" "}
+              <br className="block md:hidden" /> 
+              FORWARD{" "}
+              <br className="hidden md:block mt-4" /> 
+              THINKING
+              <br className="block md:hidden" />  AND{" "}
               <span
                 className="inline-block text-transparent bg-clip-text"
                 style={{
@@ -161,12 +169,15 @@ const Hero = () => {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                50,000 SQ FT
+                50,000 SQ FT{" "}
+                <br className="block md:hidden" /> 
               </span>
-              <br />
-              IMMERSIVE EXPERIENCE EVENT
-              <br />
-              <span className="text-white text-2xl md:text-3xl lg:text-5xl">ARENA</span>
+              <br className="hidden md:block mt-4" /> 
+              IMMERSIVE
+              <br className="block md:hidden" />  EXPERIENCE EVENT {" "}
+              <br className="block md:hidden" /> 
+              <br className="hidden md:block mt-4" /> 
+              <span className="text-white text-3xl md:text-3xl lg:text-5xl">ARENA</span>
             </h1>
           </div>
         </div>

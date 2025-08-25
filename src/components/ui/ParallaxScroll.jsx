@@ -42,7 +42,16 @@ const ParallaxScroll = ({ images, className }) => {
         className={`h-screen items-start overflow-hidden w-full ${className || ""}`}
         ref={gridRef}
       >
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 items-start max-w-7xl mx-auto gap-6 py-10 px-10">
+
+      <div
+          className="
+            grid 
+            grid-cols-[repeat(3,250px)] md:grid-cols-4 lg:grid-cols-4
+            justify-center gap-6 py-10 px-10
+            overflow-hidden max-w-7xl mx-auto
+          "
+        >
+
           {/* First Part - Moving Up */}
           <div
             className="scroll-container"
@@ -118,9 +127,9 @@ const ParallaxScroll = ({ images, className }) => {
             </div>
           </div>
 
-          {/* Fourth Part - Moving Down */}
+          {/* Fourth Part - Moving Down (⚡hidden on mobile) */}
           <div
-            className="scroll-container"
+            className="scroll-container hidden md:block"
             style={{
               animation: `moveDownSmooth 10s linear infinite`,
             }}
