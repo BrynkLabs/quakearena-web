@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp, MapPin } from 'lucide-react';
-import SecondFloor from "../assets/images/first_floor.svg";
-import FirstFloor from "../assets/images/ground_floor.svg";
-import ThirdFloor from "../assets/images/second_floor.svg";
+import SecondFloor from "../assets/images/first_floor.png";
+import FirstFloor from "../assets/images/ground_floor.png";
+import ThirdFloor from "../assets/images/second_floor.png";
 import VenueMap from "../assets/images/venue_map.png";
 import Map from "../assets/icons/maps.png";
 import VenueSide from "../assets/icons/venue_side.svg";
@@ -52,10 +52,10 @@ const Venue = () => {
 
             {/* Desktop Version - Side by side layout */}
             <div className="hidden lg:block">
-                <div className="flex justify-center items-start gap-8 px-8 pb-16">
-                    <img src={FirstFloor} alt="" />
-                    <img src={SecondFloor} alt="" />
-                    <img src={ThirdFloor} alt="" />
+                <div className="flex justify-center items-start gap-8 px-8 pb-16 ">
+                    <img src={FirstFloor} alt="" width="400px" height="40px"/>
+                    <img src={SecondFloor} alt="" width="400px" height="40px" />
+                    <img src={ThirdFloor} alt="" width="400px" height="40px"/>
                 </div>
             </div>
 
