@@ -145,7 +145,7 @@ const Hero = () => {
             </div>
 
             <h1
-              className={`relative text-white text-2xl md:text-3xl lg:text-5xl font-bold mb-8 leading-relaxed transition-all duration-1000 ${
+              className={`relative text-white text-3xl sm:text-[25px] tracking-wider md:text-3xl lg:text-5xl font-bold mb-8 transition-all duration-1000 ${
                 isAnimated
                   ? "opacity-100 translate-y-0 scale-100"
                   : "opacity-0 translate-y-12 scale-125"
@@ -154,9 +154,12 @@ const Hero = () => {
                 animation: isAnimated ? "zoomOutUp 0.8s ease-out 0.2s both" : "none",
               }}
             >
-              INDIA'S MOST FORWARD
-              <br />
-              THINKING AND{" "}
+              INDIA'S MOST {" "}
+              <br className="block md:hidden" /> 
+              FORWARD{" "}
+              <br className="hidden md:block mt-4" /> 
+              THINKING
+              <br className="block md:hidden" />  AND{" "}
               <span
                 className="inline-block text-transparent bg-clip-text"
                 style={{
@@ -166,12 +169,15 @@ const Hero = () => {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                50,000 SQ FT
+                50,000 SQ FT{" "}
+                <br className="block md:hidden" /> 
               </span>
-              <br />
-              IMMERSIVE EXPERIENCE EVENT
-              <br />
-              <span className="text-white text-2xl md:text-3xl lg:text-5xl">ARENA</span>
+              <br className="hidden md:block mt-4" /> 
+              IMMERSIVE
+              <br className="block md:hidden" />  EXPERIENCE EVENT {" "}
+              <br className="block md:hidden" /> 
+              <br className="hidden md:block mt-4" /> 
+              <span className="text-white text-3xl md:text-3xl lg:text-5xl">ARENA</span>
             </h1>
           </div>
         </div>

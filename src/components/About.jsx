@@ -98,13 +98,13 @@ const About = () => {
         <div className="sticky top-0 w-full h-screen ">
 
           {/* Title */}
-          <div className="absolute top-6 left-1/2 -translate-x-1/2 text-center z-20">
+          <div className="absolute top-6 left-1/2 -translate-x-1/2 text-center z-20 mt-2 ">
             <h2
               className="
                 text-2xl       /* Mobile bigger */
                 md:text-xl     /* Tablet */
                 lg:text-3xl    /* Desktop */
-                font-semibold tracking-wide whitespace-nowrap
+                font-bold tracking-wide whitespace-nowrap
               "
             >
               A WILD DREAM{" "}
@@ -115,7 +115,7 @@ const About = () => {
           {/* ABOUT text */}
           <div className="absolute inset-0 flex items-start justify-center z-10 mt-32">
             <h1
-              className={`text-6xl lg:text-6xl font-extrabold leading-tight text-center transition-colors duration-200`}
+              className={`text-5xl lg:text-6xl font-extrabold leading-tight text-center transition-colors duration-200`}
               style={{
                 color: textColor,
                 transform: `translateY(${scrollProgress * 100}vh)`,

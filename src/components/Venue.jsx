@@ -35,7 +35,7 @@ const Venue = () => {
     ];
 
     return (
-        <div className="min-h-screen sm:min-h-[80vh] md:min-h-screen lg:min-h-[120vh]  bg-black text-white">
+        <div className=" sm:min-h-[80vh] md:min-h-screen lg:min-h-[120vh]  bg-black text-white">
             {/* Header */}
             <div className="text-center py-8 relative">
                 <div className="flex justify-between items-center px-8">
