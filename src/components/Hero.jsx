@@ -19,6 +19,16 @@ import img14 from "../assets/home_images/14.png";
 import img15 from "../assets/home_images/15.png";
 import img16 from "../assets/home_images/16.png";
 import img17 from "../assets/home_images/17.png";
+import img18 from "../assets/home_images/18.jpg";
+import img19 from "../assets/home_images/19.jpg";
+import img20 from "../assets/home_images/20.jpg";
+import img21 from "../assets/home_images/21.jpg";
+import img22 from "../assets/home_images/22.jpg";
+import img23 from "../assets/home_images/23.jpg";
+import img24 from "../assets/home_images/24.jpg";
+import img25 from "../assets/home_images/25.jpg";
+
+
 
 import Logo from "../assets/images/logo.svg";
 import quakeBg from "../assets/icons/quake_bg.png";
@@ -38,7 +48,7 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const images = [img1, img5, img14, img4, img2, img3, img6, img7, img8, img9, img10, img11, img12, img13,  img15, img16, img17, img12 , img2];
+  const images = [img1, img2 , img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23];
 
   return (
     <>

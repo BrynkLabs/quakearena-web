@@ -68,7 +68,7 @@ const Footer = () => {
             © 2025 QUAKE ARENA
           </div>
           <div className="text-gray-400 text-sm">
-            For any queries, call +91 9078814462
+            For any queries, call +91 8558885511
           </div>
         </div>
       </div>
