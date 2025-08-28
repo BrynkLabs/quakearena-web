@@ -113,7 +113,7 @@ const Hero = () => {
       {/* Phone + Map */}
       <div className="flex gap-4">
         <a
-          href="tel:+919346315817"
+          href="tel:+919078814462"
           className="relative w-10 h-10 sm:w-8 sm:h-8 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden hover:bg-opacity-20 transition-all duration-300"
         >
           <Phone size={18} className="sm:w-4 sm:h-4 md:w-5 md:h-5" />
@@ -153,7 +153,7 @@ const Hero = () => {
           {/* Heading */}
           <div className="relative inline-block px-6 py-4">
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none mb-4">
-              <div className="w-[700px] h-[250px] rounded-full bg-black opacity-90 blur-2xl"></div>
+              <div className="w-[700px] h-[350px] rounded-full bg-black opacity-90 blur-2xl"></div>
             </div>
 
             <h1

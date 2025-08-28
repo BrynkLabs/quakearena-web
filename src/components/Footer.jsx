@@ -3,7 +3,6 @@ import { MessageCircle, Instagram } from 'lucide-react';
 import Brynklabs from "../assets/icons/brynklabs_logo.svg"; 
 import Quake from "../assets/images/logo.svg";
 import Whatsapp from "../assets/icons/whatsapp.svg";
-import X from "../assets/icons/x.svg";
 
 
 const Footer = () => {
@@ -41,10 +40,10 @@ const Footer = () => {
         <div className="flex justify-center space-x-4 mb-8">
           {/* WhatsApp */}
           <a 
-            href={instagramLink} 
+            href="https://wa.me/919078814462" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+            className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
             aria-label="WhatsApp"
           >
             <img src={Whatsapp} alt="WhatsApp" className="w-6 sm:w-7 md:w-7 h-auto" />
@@ -61,16 +60,6 @@ const Footer = () => {
             <Instagram className="w-6 sm:w-7 md:w-7 text-black" />
           </a>
           
-          {/* X (Twitter) */}
-          <a 
-            href={instagramLink}
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
-            aria-label="X (Twitter)"
-          >
-            <img src={X} alt="Twitter (X)" className="w-6 sm:w-7 md:w-7 h-auto" />
-          </a>
         </div>
 
         {/* Copyright and Contact Info */}
