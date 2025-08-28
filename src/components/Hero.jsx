@@ -2,13 +2,35 @@ import { useState, useRef, useEffect } from "react";
 import { Phone, MapPin } from "lucide-react";
 import QuakeIcon from "../assets/icons/quake.svg";
 import Crystal from "../assets/icons/quake_crystal.svg";
-import img1 from "../assets/images/img1.jpg";
-import img2 from "../assets/images/img2.jpeg";
-import img3 from "../assets/images/img3.webp";
-import img5 from "../assets/images/img5.jpeg";
-import img4 from "../assets/images/img4.jpg";
-import img6 from "../assets/images/img6.jpeg";
-import Logo from "../assets/images/logo.png";
+import img1 from "../assets/home_images/1.jpg";
+import img2 from "../assets/home_images/2.jpg";
+import img3 from "../assets/home_images/3.jpg";
+import img5 from "../assets/home_images/5.jpg";
+import img4 from "../assets/home_images/4.jpg";
+import img6 from "../assets/home_images/6.jpg";
+import img7 from "../assets/home_images/7.jpg";
+import img8 from "../assets/home_images/8.jpg";
+import img9 from "../assets/home_images/9.jpg";
+import img10 from "../assets/home_images/10.jpg";
+import img11 from "../assets/home_images/11.png";
+import img12 from "../assets/home_images/12.png";
+import img13 from "../assets/home_images/13.png";
+import img14 from "../assets/home_images/14.png";
+import img15 from "../assets/home_images/15.png";
+import img16 from "../assets/home_images/16.png";
+import img17 from "../assets/home_images/17.png";
+import img18 from "../assets/home_images/18.jpg";
+import img19 from "../assets/home_images/19.jpg";
+import img20 from "../assets/home_images/20.jpg";
+import img21 from "../assets/home_images/21.jpg";
+import img22 from "../assets/home_images/22.jpg";
+import img23 from "../assets/home_images/23.jpg";
+import img24 from "../assets/home_images/24.jpg";
+import img25 from "../assets/home_images/25.jpg";
+
+
+
+import Logo from "../assets/images/logo.svg";
 import quakeBg from "../assets/icons/quake_bg.png";
 import ParallaxScroll from "./ui/ParallaxScroll";
 import Marquee from "react-fast-marquee";
@@ -26,7 +48,7 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const images = [img1, img5, img4, img2, img3, img6, img1, img2, img5, img4, img6, img3];
+  const images = [img1, img2 , img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23];
 
   return (
     <>
@@ -101,7 +123,7 @@ const Hero = () => {
       {/* Phone + Map */}
       <div className="flex gap-4">
         <a
-          href="tel:+919346315817"
+          href="tel:+918558885511"
           className="relative w-10 h-10 sm:w-8 sm:h-8 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden hover:bg-opacity-20 transition-all duration-300"
         >
           <Phone size={18} className="sm:w-4 sm:h-4 md:w-5 md:h-5" />
@@ -126,7 +148,7 @@ const Hero = () => {
         <div className="relative z-40 flex flex-col items-center justify-center min-h-screen text-center px-6">
           {/* Icon */}
           <div
-            className={`mb-8 transition-all duration-800 ${
+            className={`relative z-20 mb-8 transition-all duration-800 ${
               isAnimated ? "opacity-100 scale-100" : "opacity-0 scale-150"
             }`}
             style={{
@@ -134,18 +156,18 @@ const Hero = () => {
             }}
           >
             <div className="flex items-center justify-center shadow-2xl">
-              <img src={QuakeIcon} alt="" width="70" height="70" />
+              <img src={QuakeIcon} alt="quake icon" width="70" height="70" />
             </div>
           </div>
 
           {/* Heading */}
           <div className="relative inline-block px-6 py-4">
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none mb-4">
-              <div className="w-[700px] h-[250px] rounded-full bg-black opacity-90 blur-2xl"></div>
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none mb-4 z-10">
+              <div className="w-[700px] h-[400px] rounded-full bg-black opacity-90 blur-2xl"></div>
             </div>
 
             <h1
-              className={`relative text-white text-3xl sm:text-[25px] tracking-wider md:text-3xl lg:text-5xl font-bold mb-8 transition-all duration-1000 ${
+              className={`relative text-white z-30 text-3xl sm:text-[25px] tracking-wider md:text-3xl lg:text-5xl font-bold mb-8 transition-all duration-1000 ${
                 isAnimated
                   ? "opacity-100 translate-y-0 scale-100"
                   : "opacity-0 translate-y-12 scale-125"

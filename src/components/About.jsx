@@ -44,7 +44,7 @@ const About = () => {
     255 - Math.floor(scrollProgress * 255)
   }, ${255 - Math.floor(scrollProgress * 255)})`;
   
-  const isDark = (255 - Math.floor(scrollProgress * 255)) <= 20;
+  const isDark = (255 - Math.floor(scrollProgress * 255)) <= 100;
 
   return (
     <>
