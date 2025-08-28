@@ -113,7 +113,7 @@ const Hero = () => {
       {/* Phone + Map */}
       <div className="flex gap-4">
         <a
-          href="tel:+919078814462"
+          href="tel:+918558885511"
           className="relative w-10 h-10 sm:w-8 sm:h-8 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 text-white overflow-hidden hover:bg-opacity-20 transition-all duration-300"
         >
           <Phone size={18} className="sm:w-4 sm:h-4 md:w-5 md:h-5" />
@@ -138,7 +138,7 @@ const Hero = () => {
         <div className="relative z-40 flex flex-col items-center justify-center min-h-screen text-center px-6">
           {/* Icon */}
           <div
-            className={`mb-8 transition-all duration-800 ${
+            className={`relative z-20 mb-8 transition-all duration-800 ${
               isAnimated ? "opacity-100 scale-100" : "opacity-0 scale-150"
             }`}
             style={{
@@ -146,18 +146,18 @@ const Hero = () => {
             }}
           >
             <div className="flex items-center justify-center shadow-2xl">
-              <img src={QuakeIcon} alt="" width="70" height="70" />
+              <img src={QuakeIcon} alt="quake icon" width="70" height="70" />
             </div>
           </div>
 
           {/* Heading */}
           <div className="relative inline-block px-6 py-4">
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none mb-4">
-              <div className="w-[700px] h-[350px] rounded-full bg-black opacity-90 blur-2xl"></div>
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none mb-4 z-10">
+              <div className="w-[700px] h-[400px] rounded-full bg-black opacity-90 blur-2xl"></div>
             </div>
 
             <h1
-              className={`relative text-white text-3xl sm:text-[25px] tracking-wider md:text-3xl lg:text-5xl font-bold mb-8 transition-all duration-1000 ${
+              className={`relative text-white z-30 text-3xl sm:text-[25px] tracking-wider md:text-3xl lg:text-5xl font-bold mb-8 transition-all duration-1000 ${
                 isAnimated
                   ? "opacity-100 translate-y-0 scale-100"
                   : "opacity-0 translate-y-12 scale-125"

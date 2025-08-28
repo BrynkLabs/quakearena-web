@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="flex justify-center space-x-4 mb-8">
           {/* WhatsApp */}
           <a 
-            href="https://wa.me/919078814462" 
+            href="https://wa.me/918558885511" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"

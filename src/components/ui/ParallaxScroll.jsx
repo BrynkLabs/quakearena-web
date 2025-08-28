@@ -56,7 +56,7 @@ const ParallaxScroll = ({ images, className }) => {
           <div
             className="scroll-container"
             style={{
-              animation: `moveUpSmooth 10s linear infinite`,
+              animation: `moveUpSmooth 15s linear infinite`,
             }}
           >
             <div className="grid gap-6">
@@ -81,7 +81,7 @@ const ParallaxScroll = ({ images, className }) => {
           <div
             className="scroll-container"
             style={{
-              animation: `moveDownSmooth 10s linear infinite`,
+              animation: `moveDownSmooth 15s linear infinite`,
             }}
           >
             <div className="grid gap-6">
@@ -106,7 +106,7 @@ const ParallaxScroll = ({ images, className }) => {
           <div
             className="scroll-container"
             style={{
-              animation: `moveUpSmooth 10s linear infinite`,
+              animation: `moveUpSmooth 15s linear infinite`,
             }}
           >
             <div className="grid gap-6">
@@ -131,7 +131,7 @@ const ParallaxScroll = ({ images, className }) => {
           <div
             className="scroll-container hidden md:block"
             style={{
-              animation: `moveDownSmooth 10s linear infinite`,
+              animation: `moveDownSmooth 15s linear infinite`,
             }}
           >
             <div className="grid gap-6">
