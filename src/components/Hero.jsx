@@ -2,12 +2,24 @@ import { useState, useRef, useEffect } from "react";
 import { Phone, MapPin } from "lucide-react";
 import QuakeIcon from "../assets/icons/quake.svg";
 import Crystal from "../assets/icons/quake_crystal.svg";
-import img1 from "../assets/images/img1.jpg";
-import img2 from "../assets/images/img2.jpeg";
-import img3 from "../assets/images/img3.webp";
-import img5 from "../assets/images/img5.jpeg";
-import img4 from "../assets/images/img4.jpg";
-import img6 from "../assets/images/img6.jpeg";
+import img1 from "../assets/home_images/1.jpg";
+import img2 from "../assets/home_images/2.jpg";
+import img3 from "../assets/home_images/3.jpg";
+import img5 from "../assets/home_images/5.jpg";
+import img4 from "../assets/home_images/4.jpg";
+import img6 from "../assets/home_images/6.jpg";
+import img7 from "../assets/home_images/7.jpg";
+import img8 from "../assets/home_images/8.jpg";
+import img9 from "../assets/home_images/9.jpg";
+import img10 from "../assets/home_images/10.jpg";
+import img11 from "../assets/home_images/11.png";
+import img12 from "../assets/home_images/12.png";
+import img13 from "../assets/home_images/13.png";
+import img14 from "../assets/home_images/14.png";
+import img15 from "../assets/home_images/15.png";
+import img16 from "../assets/home_images/16.png";
+import img17 from "../assets/home_images/17.png";
+
 import Logo from "../assets/images/logo.png";
 import quakeBg from "../assets/icons/quake_bg.png";
 import ParallaxScroll from "./ui/ParallaxScroll";
@@ -26,7 +38,7 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const images = [img1, img5, img4, img2, img3, img6, img1, img2, img5, img4, img6, img3];
+  const images = [img1, img5, img14, img4, img2, img3, img6, img7, img8, img9, img10, img11, img12, img13,  img15, img16, img17];
 
   return (
     <>
