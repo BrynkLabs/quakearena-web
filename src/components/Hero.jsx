@@ -20,7 +20,7 @@ import img15 from "../assets/home_images/15.png";
 import img16 from "../assets/home_images/16.png";
 import img17 from "../assets/home_images/17.png";
 
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/logo.svg";
 import quakeBg from "../assets/icons/quake_bg.png";
 import ParallaxScroll from "./ui/ParallaxScroll";
 import Marquee from "react-fast-marquee";

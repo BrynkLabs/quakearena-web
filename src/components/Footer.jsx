@@ -1,7 +1,7 @@
 import React from 'react';
 import { MessageCircle, Instagram } from 'lucide-react';
 import Brynklabs from "../assets/icons/brynklabs_logo.svg"; 
-import Quake from "../assets/images/logo.png";
+import Quake from "../assets/images/logo.svg";
 import Whatsapp from "../assets/icons/whatsapp.svg";
 import X from "../assets/icons/x.svg";
 
