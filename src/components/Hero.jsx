@@ -38,7 +38,7 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const images = [img1, img5, img14, img4, img2, img3, img6, img7, img8, img9, img10, img11, img12, img13,  img15, img16, img17];
+  const images = [img1, img5, img14, img4, img2, img3, img6, img7, img8, img9, img10, img11, img12, img13,  img15, img16, img17, img12 , img2];
 
   return (
     <>
