@@ -213,9 +213,9 @@ const Hero = () => {
       >
         <div className="flex items-center space-x-2 mx-6">
           <img src={QuakeIcon} alt="" width="30" height="30" />
-          <h1 className="relative text-white text-lg md:text-xl lg:text-3xl font-bold">
+          <h2 className="relative text-white text-lg md:text-xl lg:text-3xl font-bold">
             THE QUAKE NEVER STOPS
-          </h1>
+          </h2>
         </div>
       </Marquee>
     </>
