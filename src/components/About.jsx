@@ -114,7 +114,7 @@ const About = () => {
 
           {/* ABOUT text */}
           <div className="absolute inset-0 flex items-start justify-center z-10 mt-32">
-            <h1
+            <h2
               className={`text-5xl lg:text-6xl font-extrabold leading-tight text-center transition-colors duration-200`}
               style={{
                 color: textColor,
@@ -124,7 +124,7 @@ const About = () => {
               }}
             >
               ABOUT <br /> QUAKE <br /> ARENA
-            </h1>
+            </h2>
           </div>
 
           {/* Cards with video inside */}
