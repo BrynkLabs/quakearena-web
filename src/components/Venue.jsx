@@ -40,7 +40,7 @@ const Venue = () => {
             <div className="text-center py-8 relative">
                 <div className="flex justify-between items-center px-8">
                     <img src={VenueSide} alt="" className="w-16 h-auto" />
-                    <h1 className="text-4xl md:text-4xl font-bold text-white tracking-wider">VENUE MAP</h1>
+                    <h2 className="text-4xl md:text-4xl font-bold text-white tracking-wider">VENUE MAP</h2>
                     <img 
                         src={VenueSide} 
                         alt="" 
